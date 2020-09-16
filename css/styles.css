@@ -29,17 +29,23 @@ h2, h1 {
 }
 
 
+.main-nav ul {
+  list-style: none;
+}
 
 
+.main-nav a {
+
+  background: var(--primary);
+  text-decoration: none;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
 
 
-
-
-
-
-
-
-
+  display: block;
+}
 
 
 
@@ -51,6 +57,45 @@ h2, h1 {
   text-decoration: none;
   border: 0;
 }
+
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+
+
+
+.portfolio-box div, .contact div, .skills {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-page {
   text-align: center;
@@ -76,28 +121,9 @@ img {
 
 /* Navigation */
 
-.main-nav ul {
 
-  /* display: grid;
-  grid-gap: 20px;
-  padding: 0; */
-  list-style: none;
-  /* grid-template-columns: repeat(4, 1fr); */
 
-}
 
-.main-nav a {
-
-  background: var(--primary);
-  display: block;
-  text-decoration: none;
-  /* padding: 0.8rem; */
-  /* text-align: center; */
-  color: var(--dark);
-  text-transform: uppercase;
-  font-size: 1rem;
-  box-shadow: var(--shadow);
-}
 
 .main-nav li {
   margin: 15px;
@@ -112,10 +138,7 @@ img {
 
 
 
-.main-nav a:hover {
-  background: var(--dark);
-  color: var(--light);
-}
+
 
 
 /* Top Container */
