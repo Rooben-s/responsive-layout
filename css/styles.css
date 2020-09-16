@@ -79,6 +79,7 @@ img {
   grid-template-areas: 
   'showcase showcase profile-picture'
   'showcase showcase profile-picture';
+  border:red solid 1px;
 
 }
 
@@ -86,7 +87,16 @@ img {
 /* Showcase */
 .showcase {
   grid-area: showcase;
-  min-height: 500px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: left;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border: aqua solid 1px;
 
 
 }
