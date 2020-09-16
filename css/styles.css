@@ -17,7 +17,7 @@
 
 
 body {
-  background: #ccc;
+  background: #ddd;
   font-family: "Montserrat", sans-serif, Arial;
   font-size: 1rem;
   line-height: 1.5;
@@ -29,9 +29,9 @@ h2, h1 {
 }
 
 
-.showcase h1, .showcase h2 {
-  letter-spacing: -1px;
-}
+/* .showcase h1, .showcase h2 {
+  letter-spacing: 1px;
+} */
 
 
 .main-nav ul {
@@ -78,7 +78,7 @@ div .portfolio-box, div .contact, .skills {
 
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -91,6 +91,7 @@ img {
 .main-page {
   padding-top: 2em;
   text-align: center;
+  border:red solid 1px;
 }
 
 
@@ -101,11 +102,16 @@ img {
   display: block;
   font-size: 1.125em;
   text-align: center;
+  border: green solid 1px;
 }
 
-.profile-picture {
+.profile-picture img {
   width:100%;
-  padding: 20px 60px 10px;
+  /* padding: 10px; */
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  border: yellow solid 1px;
+  
 }
 
 
@@ -129,6 +135,7 @@ header {
 .portfolio-boxes {
   background-color: var(--dark);
   padding: 1rem;
+  
 }
 
 .portfolio-boxes h1, .portfolio-boxes h2, .portfolio-boxes p {
@@ -137,7 +144,11 @@ header {
 }
 
 
+.portfolio-box img {
+  border-radius: 10px;
+ 
 
+}
 
 
 
