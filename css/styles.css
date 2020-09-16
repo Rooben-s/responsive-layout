@@ -12,7 +12,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
   color: var(--dark);
 }
 
@@ -23,6 +22,27 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+h2, h1 {
+  padding: 10px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn {
   background: var(--dark);
@@ -120,62 +140,22 @@ img {
 }
 
 
-/* Showcase */
-.showcase {
-  grid-area: showcase;
-  min-height: 400px;
-  background-size: cover;
-  background-position: left;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  box-shadow: var(--shadow);
-  border: aqua solid 1px;
 
 
-}
 
-.showcase h1 {
-  font-size: 2rem;
-  /* margin-bottom: 20px; */
-  color: var(--light);
-  /* border:black solid 1px; */
-  padding-bottom: 10px;
-}
 
-.showcase h2 {
-  font-size: 1.5rem;
-  /* margin-bottom: 0; */
-  color: var(--light);
-  /* border: blueviolet solid 1px; */
-  padding-bottom: 10px;
-}
-
-.top-container {
+.top-container div {
   margin: 5px;
   padding: 30px 20px 20px;
 }
 
 .profile-picture {
-  /* background: var(--primary);
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  box-shadow: var(--shadow);
-  padding: 1.5rem; */
+
   width:100%;
   padding: 20px 60px 10px;
 }
 
 
-.portfolio-boxes {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-}
 
 
 .portfolio-box {
@@ -256,4 +236,11 @@ footer p {
   text-decoration: none;
 }
 
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
