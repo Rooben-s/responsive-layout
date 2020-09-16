@@ -29,6 +29,11 @@ h2, h1 {
 }
 
 
+.showcase h1, .showcase h2 {
+  letter-spacing: -1px;
+}
+
+
 .main-nav ul {
   list-style: none;
 }
@@ -50,9 +55,10 @@ h2, h1 {
 .btn {
   background: var(--dark);
   color: var(--light);
-  padding: 0.6rem 1.3rem;
+  padding: 0.6rem 1rem;
   text-decoration: none;
   border: 0;
+
 }
 
 
@@ -64,7 +70,7 @@ h2, h1 {
 
 
 
-.portfolio-box div, .contact div, .skills {
+div .portfolio-box, div .contact, .skills {
   max-width: 500px;
   text-align: center;
   margin: 0 auto;
@@ -84,6 +90,7 @@ img {
 
 .main-page {
   padding-top: 2em;
+  text-align: center;
 }
 
 
@@ -107,6 +114,7 @@ img {
 header {
   padding-bottom: 20px;
   color: (var(--dark));
+  text-align: center;
 }
 
 
@@ -118,6 +126,15 @@ header {
 }
 
 
+.portfolio-boxes {
+  background-color: var(--dark);
+  padding: 1rem;
+}
+
+.portfolio-boxes h1, .portfolio-boxes h2, .portfolio-boxes p {
+  color: var(--light);
+  /* text-align: center; */
+}
 
 
 
@@ -129,7 +146,11 @@ header {
 
 
 
-
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 
 
@@ -157,7 +178,7 @@ header {
 /* Top Container */
 
 
-.profile-picture div, .contact div {
+/* .profile-picture div, .contact div {
   max-width: 500px;
   text-align: center;
   margin: 0 auto;
@@ -227,7 +248,7 @@ header {
 
 
 /* footer */
-footer h1 {
+/* footer h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--dark);
@@ -265,13 +286,9 @@ footer p {
   background: var(--light);
   color: var(--dark);
   text-decoration: none;
-}
+} */ */
 
 
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 
