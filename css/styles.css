@@ -101,12 +101,29 @@ img {
 
 }
 
+.showcase h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--light);
+  border:black solid 1px;
+}
+
+.showcase h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: var(--light);
+  border: blueviolet solid 1px;
+}
+
+
+
 .profile-picture {
-  grid-area: profile-picture;
-  background: url(/images/profile-picture.png);
-  background-position: right;
-  background-size: 
-  
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
 }
 
 
