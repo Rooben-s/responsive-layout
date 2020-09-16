@@ -127,8 +127,20 @@ img {
 }
 
 
+.portfolio-boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
 
 
+.portfolio-box {
+  background: var(--primary);
+  text-align: left;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
 
 
 
