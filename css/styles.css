@@ -1,305 +1,126 @@
-/* CSS Variables */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+* {
+  box-sizing: border-box;
+
+}
 
 :root {
   --primary: #ddd;
   --dark: #333;
   --light: #fff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: var(--dark);
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.6);
 }
 
 
 body {
-  background: #ddd;
-  font-family: "Montserrat", sans-serif, Arial;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-h2, h1 {
-  padding: 10px;
-  font-weight: 500;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 
-/* .showcase h1, .showcase h2 {
-  letter-spacing: 1px;
-} */
-
-
-.main-nav ul {
+ul {
   list-style: none;
+  padding-left: 0;
 }
 
 
-.main-nav a {
-  background: var(--primary);
+a {
   text-decoration: none;
-  color: var(--dark);
+}
+
+
+nav {
+  font-family: "Roboto", Arial, Verdana;
+  font-weight: 400;
+  letter-spacing: .05em;
+  background-color: #829356;
+  padding: 25px;
+  border: red solid 1px;
+}
+
+
+
+h1, .top-nav {
+  text-align: center;
+}
+
+
+.top-nav, .top-nav li {
+  width: 100%;
+
+}
+
+
+h1 a, .top-nav a {
+  color: #000;
+}
+
+
+.top-nav {
+  margin-top: 30px;
+}
+
+
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: #fff;
+
+}
+
+.top-nav a {
   text-transform: uppercase;
-  font-size: 1rem;
-  box-shadow: var(--shadow);
-
-  display: block;
-}
-
-
-
-.btn {
-  background: var(--dark);
-  color: var(--light);
-  padding: 0.6rem 1rem;
-  text-decoration: none;
-  border: 0;
-
-}
-
-
-.main-nav a:hover {
-  background: var(--dark);
-  color: var(--light);
 }
 
 
 
 
-div .portfolio-box, div .contact, .skills {
-  max-width: 500px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-
-img {
-  width: 100%;
-  display: block;
-}
-
-.wrapper {
-  margin: auto;
-}
 
 
 
-.main-page {
-  padding-top: 2em;
-  text-align: center;
-  border:red solid 1px;
-}
 
 
-.main-nav li {
-  margin: 10px;
-  padding: 10px;
-  background-color: white;
-  display: block;
-  font-size: 1.125em;
-  text-align: center;
-  border: green solid 1px;
-}
 
-.profile-picture img {
-  width:100%;
-  /* padding: 10px; */
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  border: yellow solid 1px;
+
+
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0;
+  }
   
-}
-
-
-
-
-header {
-  padding-bottom: 20px;
-  color: (var(--dark));
-  text-align: center;
-}
-
-
-
-
-.main-header {
-  margin: 5px;
-  padding: 30px 20px 20px;
-}
-
-
-.portfolio-boxes {
-  background-color: var(--dark);
-  padding: 1rem;
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
   
-}
-
-.portfolio-boxes h1, .portfolio-boxes h2, .portfolio-boxes p {
-  color: var(--light);
-  /* text-align: center; */
-}
-
-
-.portfolio-box img {
-  border-radius: 10px;
- 
-
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+​
+  .top-nav a {
+    color: var(--light);
+  }
 }
 
 
 
+@media (min-width: 1024px) {
+  h1 {
+    float: left;
+    text-align: left;
+    height: 12px;
+    line-height: 12px;
+  }
+​
+  .top-nav {
+    text-align: right;
+    
+  }
 
 
 
-
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-
-
-
-
-
-
-
-
-
-/* Navigation */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Top Container */
-
-
-/* .profile-picture div, .contact div {
-  max-width: 500px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-
-
-.top-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas: 
-  'showcase showcase profile-picture'
-  'showcase showcase profile-picture';
-  border:red solid 1px;
 
 }
-
-
-
-
-
-
-.top-container div {
-  margin: 5px;
-  padding: 30px 20px 20px;
-}
-
-
-
-
-
-.portfolio-box {
-  background: var(--primary);
-  text-align: left;
-  padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
-  
-}
-
-.portfolio-box h2 {
-  text-align: center;
-}
-
-.portfolio-box img {
-  width: 100%;
-  box-shadow: var(--shadow);
-}
-
-
-.skills h1 {
-  text-align: center;
-  
-  
-
-}
-
-
-.skills img {
-  display: grid;
-  grid-gap: 20px;
-  
-  background: (var(--primary));
-  padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-
-/* footer */
-/* footer h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: var(--dark);
-  text-align: center;
-  padding: 1rem;
-  border: blueviolet solid 1px;
-
-}
-footer p {
-  margin-top: 1rem;
-  text-align: center;
-
-  border: green solid 1px;
-}
-
-
-
-
-
-.footer-nav {
-  margin-top: 5rem;
-  background: var(--dark);
-  color: var(--light);
-  text-align: center;
-  padding: 1rem;
-}
-
-.footer-nav a {
-  color: var(--light);
-  text-decoration: none;
-
-}
-
-.footer-nav a:hover {
-  background: var(--light);
-  color: var(--dark);
-  text-decoration: none;
-} */ */
-
-
-
-
-
