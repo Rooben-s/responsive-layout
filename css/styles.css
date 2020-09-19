@@ -10,7 +10,7 @@
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.6);
 }
 
-
+/* 
 body {
   margin: 0 auto;
   max-width: 1024px;
@@ -22,11 +22,9 @@ ul {
   padding-left: 0;
 }
 
-
 a {
   text-decoration: none;
 }
-
 
 nav {
   font-family: "Roboto", Arial, Verdana;
@@ -37,18 +35,14 @@ nav {
   border: red solid 1px;
 }
 
-
-
 h1, .top-nav {
   text-align: center;
 }
-
 
 .top-nav, .top-nav li {
   width: 100%;
 
 }
-
 
 h1 a, .top-nav a {
   color: #000;
@@ -60,7 +54,6 @@ h1 a, .top-nav a {
 }
 
 
-
 .top-nav li {
   padding: 10px 0;
   margin: 5px auto;
@@ -70,11 +63,73 @@ h1 a, .top-nav a {
 
 .top-nav a {
   text-transform: uppercase;
+} */
+
+
+
+
+/* -------------------------------------------footer nav */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: #093145;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.38em;
+}
+
+
+footer {
+  /* position: absolute; This line is only for the codepen
+  bottom: 0; This line is only for the codepen */
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  background-color: #107896;
 }
 
 
 
+h2 {
+  float: left;
+  height: 12px;
+  line-height: 12px;
+}
+​
+.footer-nav {
+  text-align: right;
+}
+​
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
+
+.top, .footer-nav li:last-child {
+  margin-right: 0;
+}
+
+
+.full {
+  display: none;
+}
 
 
 
@@ -85,7 +140,7 @@ h1 a, .top-nav a {
 
 
 @media (min-width: 768px) {
-  .top-nav {
+  /* .top-nav {
     margin-top: 0;
   }
   
@@ -102,13 +157,41 @@ h1 a, .top-nav a {
 ​
   .top-nav a {
     color: var(--light);
-  }
+  } */
+
+
+
+/* footer */
+.top {
+  display: none;
+}
+.full {
+  display: inline-block;
 }
 
 
 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1024px) {
-  h1 {
+  /* h1 {
     float: left;
     text-align: left;
     height: 12px;
@@ -118,7 +201,7 @@ h1 a, .top-nav a {
   .top-nav {
     text-align: right;
     
-  }
+  } */
 
 
 
