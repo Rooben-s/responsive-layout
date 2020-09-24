@@ -12,8 +12,89 @@
 
 
 body {
-  margin: 0 auto;
+  background-color: var(--primary);
+  font-family: "Open Sans",sans-serif, Arial, Verdana;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
 
+
+.top-nav h1, .top-nav {
+  text-align: center;
+  border: royalblue solid 1px;
+}
+
+
+
+.intro h1 {
+  padding-bottom: 20px;
+ 
+
+  border: yellow solid 1px;
+}
+
+
+.intro h2, .intro h1 {
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+/* Top Navigation links */
+.top-nav li {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: green solid 1px;
+}
+
+
+
+.profile {
+  margin: 5px;
+  padding: 30px 20px 20px;
+  border: green solid 1px;
+}
+
+
+.profile-picture {
+  width: 100%;
+  padding: 10px 200px 10px;
+  border: fuchsia solid 1px;
+}
+
+
+
+
+
+
+
+
+.main-header {
+  padding-top: 2em;
 }
 
 
@@ -21,72 +102,85 @@ body {
 /* flexible images */
 img {
   max-width: 100%;
+  display: block;
+  
  
 }
 
 
-.showcase {
-  border: blue solid 1px;
+header {
+  text-align: center;
+  border:red solid 1px;
 }
+
+
+
 
 ul {
   list-style: none;
-  padding-left: 0;
-}
 
-a {
-  text-decoration: none;
-}
-
-nav {
-  font-family: "Roboto", Arial, Verdana;
-  
-  letter-spacing: .05em;
-  background-color: grey;
-  padding: 25px;
-  border: red solid 1px;
 }
 
 
-.top-nav h1, .top-nav {
+.box img {
+  border: black solid 1px;
+  border-radius: 10px;
+}
+
+
+#portfolio-boxes {
+  background-color: var(--light);
+  padding: 4em;
+}
+
+
+div .box {
+  max-width: 500px;
   text-align: center;
+  margin: 0 auto;
 }
 
 
 
-.top-nav, .top-nav li {
-  width: 100%;
-}
-
-h1 a, .top-nav a {
-  color: black;
-  font-weight: 600;
-}
 
 
-.top-nav {
-  margin-top: 30px;
+#skills-boxes div {
+
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border: hotpink solid 1px;
+  border-radius: 10px;
 }
 
 
-.top-nav li {
-  padding: 10px 0;
-  margin: 5px auto;
-
+section .contact {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
 }
 
 
 
-.top-nav a {
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+  border-top: 1px solid var(--light);
+  padding-top: 20px;
   text-transform: uppercase;
 }
 
 
-.profile-picture {
+.btt {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 
-  border: green solid 1px;
-
-
+.footer-nav {
+  display: none;
 }
 
 
@@ -125,58 +219,6 @@ h1 a, .top-nav a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-  .top-nav {
-    margin-top: 0;
-  }
-  
-  .top-nav li {
-    display: inline-block;
-    width: auto;
-    margin-right: 15px;
-    background-color: transparent;
-  }
-  
-  .top-nav li:last-child {
-    margin-right: 0;
-  }
-
-  .top-nav a {
-    color: black;
-  }
-}
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px) {
-  h1 {
-    float: left;
-    text-align: left;
-    height: 12px;
-    line-height: 12px;
-  }
-
-  .top-nav {
-    text-align: right;
-  }
-}
 
 
 
