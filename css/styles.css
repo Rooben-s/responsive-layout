@@ -17,6 +17,18 @@ body {
 }
 
 
+
+/* flexible images */
+img {
+  max-width: 100%;
+ 
+}
+
+
+.showcase {
+  border: blue solid 1px;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -28,11 +40,53 @@ a {
 
 nav {
   font-family: "Roboto", Arial, Verdana;
-  font-weight: 400;
+  
   letter-spacing: .05em;
-  background-color: #829356;
+  background-color: grey;
   padding: 25px;
   border: red solid 1px;
+}
+
+
+.top-nav h1, .top-nav {
+  text-align: center;
+}
+
+
+
+.top-nav, .top-nav li {
+  width: 100%;
+}
+
+h1 a, .top-nav a {
+  color: black;
+  font-weight: 600;
+}
+
+
+.top-nav {
+  margin-top: 30px;
+}
+
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+
+}
+
+
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+
+.profile-picture {
+
+  border: green solid 1px;
+
+
 }
 
 
@@ -43,6 +97,86 @@ nav {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0;
+  }
+  
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+  
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .top-nav a {
+    color: black;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  h1 {
+    float: left;
+    text-align: left;
+    height: 12px;
+    line-height: 12px;
+  }
+
+  .top-nav {
+    text-align: right;
+  }
+}
 
 
 
