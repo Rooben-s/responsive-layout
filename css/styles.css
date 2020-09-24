@@ -81,11 +81,11 @@ a:hover {
 
 
 .profile-picture {
-  width: 100%;
-  padding: 10px 200px 10px;
-  border: fuchsia solid 1px;
+  width: 50%;
+  margin: auto;
+  border: black solid 1px;
+  border-radius: 10px;
 }
-
 
 
 
@@ -118,6 +118,7 @@ header {
 
 ul {
   list-style: none;
+  
 
 }
 
@@ -149,9 +150,18 @@ div .box {
   max-width: 300px;
   text-align: center;
   margin: 0 auto;
-  border: hotpink solid 1px;
+  
+  
+}
+
+
+#skills-boxes img {
+  margin: auto;
+  width: 80%;
+  border: blue solid 1px;
   border-radius: 10px;
 }
+
 
 
 section .contact {
