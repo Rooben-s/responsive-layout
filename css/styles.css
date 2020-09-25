@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
 }
 
 :root {
-  --primary: #ddd;
-  --dark: #333;
-  --light: #fff;
+  --primary: #82a6cb;
+  --dark: #3667a6;
+  --light: #bdd8f1;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.6);
 }
 
@@ -17,8 +19,7 @@ body {
   color: black;
   font-size: 1rem;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
+
 }
 
 
@@ -157,17 +158,17 @@ div .box {
 
 #skills-boxes img {
   margin: auto;
-  width: 80%;
-  border: blue solid 1px;
-  border-radius: 10px;
+  width: 90%;
+ 
 }
 
 
 
-section .contact {
+footer {
   text-align: center;
   margin: auto;
   padding: 1rem;
+  border: slateblue solid 1px;
 }
 
 
@@ -177,9 +178,10 @@ section .contact {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 35px;
-  border-top: 1px solid var(--light);
+  border-top: 1px solid var(--dark);
   padding-top: 20px;
   text-transform: uppercase;
+  border: lawngreen solid 1px;
 }
 
 
@@ -187,15 +189,15 @@ section .contact {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  border: firebrick solid 1px;
+  
 }
 
 .footer-nav {
   display: none;
+  border:olivedrab solid 1px;
+  
 }
-
-
-
-
 
 
 
