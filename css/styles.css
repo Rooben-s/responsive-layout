@@ -99,8 +99,8 @@ a:hover {
 .profile-picture {
   width: 60%;
   margin: auto;
-  border: black solid 1px;
-  border-radius: 10px;
+  border: var(--dark-1) solid 1px;
+  border-radius: 5px;
 }
 
 
@@ -140,8 +140,8 @@ ul {
 
 
 .box img {
-  border: black solid 1px;
-  border-radius: 10px;
+  border: var(--dark-1) solid 1px;
+  border-radius: 5px;
 }
 
 
@@ -175,7 +175,9 @@ div .box {
 #skills-boxes img {
   margin: auto;
   max-width: 100%;
-  padding: 10px;
+  padding: 20px;
+  border: var(--dark-1) solid 1px;
+  border-radius: 5px;
  
 }
 
