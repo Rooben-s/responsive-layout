@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 :root {
@@ -13,14 +12,12 @@
   --dark-1: #64868e;
 }
 
-
 body {
   background-color: var(--primary);
   font-family: "Open Sans",sans-serif, Arial, Verdana;
   color: black;
   font-size: 1rem;
   line-height: 1.5;
-
 }
 
 
@@ -29,25 +26,11 @@ body {
   border: royalblue solid 1px;
 }
 
-
-
 .intro {
   padding: 5px;
   margin-top: 10px;
   border: yellow solid 1px;
 }
-
-
-
-/* 
-.intro h2, .intro h1 {
-  text-align: center;
-  padding: 10px;
-
-
-} */
-
-
 
 h1, h2 {
   font-size: 1.5em;
@@ -60,10 +43,7 @@ h3 {
   font-size: 1.1em;
   color: black;
   text-decoration: none;
-
 }
-
-
 
 a {
   text-decoration: none;
@@ -78,23 +58,20 @@ a:hover {
 .top-nav li {
   margin: 10px;
   padding: 10px;
-  background-color: white;
+  background-color: transparent;
   display: block;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  border: green solid 1px;
+  
 }
-
-
 
 .profile {
   margin: 5px;
   padding: 30px 20px 20px;
   border: green solid 1px;
 }
-
 
 .profile-picture {
   width: 60%;
@@ -103,24 +80,15 @@ a:hover {
   border-radius: 5px;
 }
 
-
-
-
-
-
-
 .main-header {
   padding-top: 2em;
 }
-
 
 
 /* flexible images */
 img {
   max-width: 100%;
   display: block;
-  
- 
 }
 
 
@@ -130,12 +98,8 @@ header {
 }
 
 
-
-
 ul {
   list-style: none;
-  
-
 }
 
 
@@ -146,7 +110,7 @@ ul {
 
 
 #portfolio-boxes {
-  background-color: var(--light);
+  background-color: var(--dark);
   padding: 4em;
 }
 
@@ -158,17 +122,12 @@ div .box {
 }
 
 
-
-
-
 #skills-boxes div {
 
   max-width: 300px;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
-  
-  
 }
 
 
@@ -178,7 +137,6 @@ div .box {
   padding: 20px;
   border: var(--dark-1) solid 1px;
   border-radius: 5px;
- 
 }
 
 
@@ -191,7 +149,6 @@ footer {
 }
 
 
-
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -200,7 +157,6 @@ footer {
   border-top: 1px solid var(--dark);
   padding-top: 20px;
   text-transform: uppercase;
-  
   border: lawngreen solid 1px;
 }
 
@@ -210,13 +166,77 @@ footer {
   color: black;
   font-weight: bold;
   /* border: firebrick solid 1px; */
-  
 }
 
 .footer-nav {
   display: none;
   border:olivedrab solid 1px;
-  
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  body {
+    background-color: violet;
+  }
+
+  h1.top-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .top-nav li {
+    background-color: transparent;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px 40px;
+    margin: 0;
+  }
+
+  /* .profile-picture {
+    padding: 15px;
+
+  } */
+
+  .intro {
+    text-align: left;
+    padding: 30px 8px 30px 16px;
+  }
+
+  .box h1 {
+    margin: auto;
+    padding-left: 2rem;
+    align-items: center;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -233,6 +253,15 @@ footer {
 
 
 
+
+
+
+@media (min-width: 1024px) {
+
+  body {
+    background-color: yellow;
+  }
+}
 
 
 
