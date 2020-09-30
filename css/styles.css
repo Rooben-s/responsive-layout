@@ -9,9 +9,6 @@
   --secondary: #a8b2d1;
   --dark: #8892b0;
   --light: #e6f1ff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.6);
-  --dark-1: #64868e;
-  --text: #64ffda;
 }
 
 body {
@@ -23,229 +20,401 @@ body {
 }
 
 
-.top-nav h1, .top-nav {
+/* ---- Code snippet provided by Brian Jensen --- */
+ul {
+  padding-left: 0;
+}
+/* ---------------------------------------------- */
+
+a
+{
+  color:black;
+}
+
+img
+{
+  padding-top: 55px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+p
+{
+  font-size: 21px;
+  font-weight: 300;
+  padding-top: 25px;
   text-align: center;
-  border: royalblue solid 1px;
 }
 
-.intro {
-  padding: 5px;
-  margin-top: 10px;
-  border: yellow solid 1px;
+h3
+{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
 }
 
-h1, h2 {
-  font-size: 1.5em;
-  font-weight: normal;
-  color: black;
+h2
+{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 3px;
+  font-weight: 400;
+}
+
+
+
+/* ---- Navigation ---- */
+
+.name
+{
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.main-nav
+{
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main-nav li
+{
+  list-style: none;
+  margin: 7px 0;
+  background-color: var(--light);
+}
+
+.name a,
+.main-nav a
+{
   text-decoration: none;
+  letter-spacing: 1.1px;
+}
+
+.name a,
+.main-nav li a
+{
+  display: block;
+  padding: 8px 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header
+{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: var(--light);
+}
+
+.container
+{
+  width: 90%;
+  margin: auto;
+}
+
+.name-container
+{
+  text-align: center;
+}
+
+.main-nav-container
+{
+  text-align: center;
+}
+
+.main-footer
+{
+  background-color: var(--light); 
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.cover-img
+{
+  width: 60%;
+}
+
+.main-header p
+{
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 25px;
+}
+
+.calculator-paragraph
+{
+  padding-bottom: 80px;
+}
+
+.contact-header
+{
+ padding-top: 80px;  
+}
+
+.main-footer p
+{
+  color: black;
+}
+
+.phone
+{
+  font-weight: 700;
+}
+
+.email
+{
+  font-weight: 700;
+}
+
+hr
+{
+  color: black;
+  margin-top: 80px;
+}
+
+.student-name
+{
+  float: left;
+  font-weight: 900;
+  color: bl;
+}
+
+.main-footer a
+{
+  float: right;
+  text-decoration: none;
+}
+
+
+.bottom-of-page {
+  padding: 25px 0;
+}
+.bottom-of-page h3,
+.student-name {
+  padding: 0;
+}
+.student-name {
+  line-height: 0.50;
+}
+
+
+.main-nav-bottom
+{
+  display: none;
+}
+
+
+
+
+/* ------------ Media Queries 768px -------------- */
+
+/* ================================= 
+Media Queries
+==================================== */
+
+@media (min-width: 768px)
+{
+
+
+img {
+  width: 95%;
+}
+
+p {
+  font-size: 15px;
 }
 
 h3 {
-  font-size: 1.1em;
-  color: black;
-  text-decoration: none;
+  font-size: 15px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+h2 {
+  font-size: 16px;
 }
 
-a:hover {
-  color: orange;
+.name {
+  font-size: 21px;
 }
 
-/* Top Navigation links */
-.top-nav li {
-  margin: 10px;
-  padding: 10px;
+.main-nav {
+  font-size: 12px;
+}
+
+.main-nav li {
   background-color: transparent;
-  display: block;
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  
+  display: inline-block;
+  padding-right: 25px;
 }
 
-.profile {
-  margin: 5px;
-  padding: 30px 20px 20px;
-  border: green solid 1px;
+.main-nav li:last-child {
+  padding-right: 0;
 }
 
-.profile-picture {
+
+.container-portfolio {
+  float:left;
+  width: 50%;
+  padding-right: 2px;
+}
+
+
+
+.cover-img {
+  width: 25%;
+  float: right;
+  margin-right: 15px;
+}
+
+.main-header p {
+  padding-top: 55px;
+  float: left;
   width: 60%;
-  margin: auto;
-  border: var(--dark-1) solid 1px;
-  border-radius: 5px;
+  text-align: left;
 }
 
-.main-header {
-  padding-top: 2em;
+.student-name {
+  float: left;
+  font-size: 12px;
 }
 
-
-/* flexible images */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-
-header {
-  text-align: center;
-  border:red solid 1px;
-}
-
-
-ul {
-  list-style: none;
-}
-
-
-.box img {
-  border: var(--dark-1) solid 1px;
-  border-radius: 5px;
-}
-
-
-#portfolio-boxes {
-  background-color: var(--dark);
-  padding: 4em;
-}
-
-
-div .box {
-  max-width: 500px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-
-#skills-boxes div {
-
-  max-width: 300px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-
-#skills-boxes img {
-  margin: auto;
-  max-width: 100%;
-  padding: 20px;
-  border: var(--dark-1) solid 1px;
-  border-radius: 5px;
-}
-
-
-
-footer {
-  text-align: center;
-  margin: auto;
-  padding: 1rem;
-  border: slateblue solid 1px;
-}
-
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 35px;
-  border-top: 1px solid var(--dark);
-  padding-top: 20px;
-  text-transform: uppercase;
-  border: lawngreen solid 1px;
-}
-
-
-.btt {
+.main-footer a {
+  float: right;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  /* border: firebrick solid 1px; */
 }
 
-.footer-nav {
+.top-button {
   display: none;
-  border:olivedrab solid 1px;
+}
+
+.main-nav-bottom {
+  display: initial;
+  float: right;
+}
+
+.main-nav-bottom li {
+  list-style: none;
+  float: right;
+}
+
+.bottom-of-page,
+.main-nav-bottom li {
+  padding-top: 0;
+}
+
+.main-nav-bottom a {
+  text-decoration: none;
+  letter-spacing: 1.1px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+
+.bottom-of-page {
+  padding: 25px 0;
+}
+.bottom-of-page h3,
+.student-name {
+  padding: 0;
+}
+.student-name {
+  line-height: 0.50;
+}
+
+
 }
 
 
 
+/* ------------ Media Queries 1024px -------------- */
 
-
-
-
-
-@media (min-width: 768px) {
-  /* body {
-    background-color: violet;
-  } */
-
+@media (min-width: 1024px)
+{
   
+
+
+p {
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+
+.name {
+  font-size: 21px;
+  float: left;
+}
+
+.main-nav {
+  font-size: 12px;
+  float: right;
 }
 
 
 
+.name-container {
+  display: inline-block;
+  width: 27%;
+}
 
+.main-nav-container {
+  display: inline-block;
+  width: 70%;
+}
 
-
-
-
-@media (min-width: 1024px) {
-
-  /* body {
-    background-color: yellow;
-  } */
+.container-portfolio {
+  width: 33.33%;
 }
 
 
 
+.cover-img {
+  width: 25%;
+  margin-right: 15px;
+}
 
+.main-header p {
+  text-align: left;
+}
 
+.student-name {
+  float: left;
+  font-size: 12px;
+}
 
+.main-footer a {
+  float: right;
+  text-decoration: none;
+}
 
+.top-button {
+  display: none;
+}
 
+.main-nav-bottom {
+  display: initial;
+  float: right;
+}
 
+}
 
+/* ---- Float clearfix ---- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
