@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--primary);
+  background-color: White;
   font-family: "Open Sans",sans-serif, Arial, Verdana;
   color: black;
   font-size: 1rem;
@@ -26,40 +26,35 @@ ul {
 }
 
 
-a
-{
+a {
   color:black;
 }
 
-img
-{
+img {
   padding-top: 55px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
+  
 }
 
-p
-{
+p {
   font-size: 21px;
   font-weight: 300;
   padding-top: 25px;
   text-align: center;
 }
 
-h3
-{
+h3 {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 900;
 }
 
-h2
-{
+h2 {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 3px;
@@ -70,125 +65,102 @@ h2
 
 /* ---- Navigation ---- */
 
-.name
-{
+.name {
   font-size: 25px;
   font-weight: 900;
 }
 
-.main-nav
-{
+.main-nav {
   font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.main-nav li
-{
+.main-nav li {
   list-style: none;
   margin: 7px 0;
-  background-color: var(--light);
+  background-color: white;
 }
 
 .name a,
-.main-nav a
-{
+.main-nav a {
   text-decoration: none;
   letter-spacing: 1.1px;
 }
 
 .name a,
-.main-nav li a
-{
+.main-nav li a {
   display: block;
   padding: 8px 0;
 }
 
 /* ---- Layout Containers ---- */
 
-.main-header
-{
+.main-header {
   padding-top: 20px;
   padding-bottom: 50px;
-  background-color: var(--light);
+  background-color: white;
 }
 
-.container
-{
+.container {
   width: 90%;
   margin: auto;
 }
 
-.name-container
-{
+.name-container {
   text-align: center;
 }
 
-.main-nav-container
-{
+.main-nav-container {
   text-align: center;
 }
 
-.main-footer
-{
-  background-color: var(--light); 
+.main-footer {
+  background-color: white; 
   text-align: center;
 }
 
 /* ---- Page Elements ---- */
 
-.cover-img
-{
+.cover-img {
   width: 60%;
+  border: turquoise solid 1px;
 }
 
-.main-header p
-{
+.main-header p {
   font-size: 18px;
   font-weight: 300;
   padding-top: 25px;
 }
 
-.calculator-paragraph
-{
-  padding-bottom: 80px;
-}
 
-.contact-header
-{
+
+.contact-header {
  padding-top: 80px;  
 }
 
-.main-footer p
-{
+.main-footer p {
   color: black;
 }
 
-.phone
-{
+.phone, .email {
   font-weight: 700;
 }
 
-.email
-{
-  font-weight: 700;
-}
 
-hr
-{
+
+hr {
   color: black;
   margin-top: 80px;
 }
 
-.student-name
-{
+.student-name {
   float: left;
   font-weight: 900;
   color: black;
 }
 
-.main-footer a
-{
+.main-footer a {
   float: right;
   text-decoration: none;
 }
@@ -206,8 +178,7 @@ hr
 
 
 
-.main-nav-bottom
-{
+.main-nav-bottom {
   display: none;
 }
 
@@ -241,7 +212,8 @@ h2 {
 }
 
 .name {
-  font-size: 21px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .main-nav {
@@ -336,13 +308,13 @@ h2 {
 
 /* ------------ Media Queries 1024px -------------- */
 
-@media (min-width: 1024px)
-{
+@media (min-width: 1024px) {
   
 
 
 p {
   font-size: 15px;
+ 
 }
 
 h3 {
@@ -355,7 +327,7 @@ h2 {
 
 
 .name {
-  font-size: 21px;
+  font-size: 12px;
   float: left;
 }
 
@@ -383,8 +355,8 @@ h2 {
 
 
 .cover-img {
-  width: 25%;
-  margin-right: 15px;
+  width: 30%;
+  margin-right: 25px;
 }
 
 .main-header p {
@@ -393,7 +365,7 @@ h2 {
 
 .student-name {
   float: left;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .main-footer a {
@@ -418,4 +390,4 @@ h2 {
   content: " ";
   display: table;
   clear: both;
-}
+} 
